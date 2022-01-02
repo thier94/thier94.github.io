@@ -1,34 +1,24 @@
-#w{
-    font-size: 20vw;
+#w{font-size: 15vw;}
+#e1{font-size: 15vw;}
+#l{font-size: 15vw;}
+#c{font-size: 15vw;}
+#o{font-size: 15vw;}
+#m{font-size: 15vw;}
+#e2{font-size: 15vw;}
+#welcome{text-align: center;}
+
+.modal-content{
+    background-color: transparent;
 }
 
-#e1{
-    font-size: 20vw;
+.btn-secondary{
+    background-color: tomato;
 }
 
-#l{
-    font-size: 20vw;
+.modal-footer{
+    border-color: transparent;
 }
 
-#c{
-    font-size: 20vw;
-}
-
-#o{
-    font-size: 20vw;
-}
-
-#m{
-    font-size: 20vw;
-}
-
-#e2{
-    font-size: 20vw;
-}
-
-#welcome{
-    margin-left: 5%;
-}
 
 
 
