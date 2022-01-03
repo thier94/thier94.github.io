@@ -18,7 +18,14 @@
     <script defer src="myScript.js"></script> <!-- my javascript file -->
 
     <style>
-        
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
     </style>
 
 </head>
@@ -26,29 +33,46 @@
 
     <div class="row">
 
-        <div class="col-12"> 
-
-            <ul class="nav">
-                <li class="nav-item bg-dark">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item bg-dark">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item bg-light border">
-                  <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >DIPLOMA</a>
-                </li>
-                <li class="nav-item bg-light border">
-                  <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >UPSILON PI EPSILON</a>
-                </li>
-                <li class="nav-item bg-light border">
-                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >PI MU EPSILON</a>
-                </li>
-            </ul>
-
-            <p>Coming soon...</p>
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
             
-        </div>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <i class="fa fa-home w3-xlarge"></i>
+                <p>Home</p>
+              </a>
+              <a href="" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <p>Diploma</p>
+              </a>
+              <a href="" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <p>Upsilon Pi Epsilon</p>
+              </a>
+              <a href="" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <p>Pi Mu Epsilon</p>
+              </a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+              <p>Tic Tac Toe</p>
+            </a>
+            <a href="matrix.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+              <p>2D Matrix</p>
+            </a>
+            <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-black">
+              <p>Java</p>
+            </a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
+              <p>Java</p>
+            </a>
+            <button class="w3-bar-item w3-button w3-red">
+              <!--i class="fa fa-dollar w3-small"></i--> 
+              <p>Java</p>
+            </button>
+            <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <p>Java</p>
+              </a>
+              <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <p>Java</p>
+              </a>
+            
+        </nav>
         
     </div>
 
