@@ -5,7 +5,9 @@
 #o{font-size: 15vw;}
 #m{font-size: 15vw;}
 #e2{font-size: 15vw;}
-#welcome{text-align: center;}
+#welcome{
+    text-align: center;
+}
 
 .modal-content{
     background-color: transparent;
@@ -17,6 +19,11 @@
 
 .modal-footer{
     border-color: transparent;
+}
+
+.nav-link{
+    font-weight: bold;
+    color: steelblue;
 }
 
 
