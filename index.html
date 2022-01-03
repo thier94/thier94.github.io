@@ -17,6 +17,22 @@
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
     <script defer src="myScript.js"></script> <!-- my javascript file -->
 
+    <script type="text/javascript">
+
+      function loadDiploma() {
+        document.getElementById('modalImg').src="./cs_diploma.jpg";
+      }
+
+      function loadUpe() {
+        document.getElementById('modalImg').src="./upe.jpg";
+      }
+
+      function loadPiMuEpsilon() {
+        document.getElementById('modalImg').src="./PiMuEpsilon.jpg";
+      }
+      
+    </script>
+
     <style>
         body{
             background-image: url('bgImage.jpeg');
@@ -38,13 +54,13 @@
                     <a class="nav-link" href="projects.html">Projects</a>
                 </li>
                 <li class="nav-item bg-light border">
-                  <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >DIPLOMA</a>
+                  <a class="nav-link" onclick="loadDiploma()" data-toggle="modal" data-target="#exampleModal" >DIPLOMA</a>
                 </li>
                 <li class="nav-item bg-light border">
-                  <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >UPSILON PI EPSILON</a>
+                  <a class="nav-link" onclick="loadUpe()" data-toggle="modal" data-target="#exampleModal" >UPSILON PI EPSILON</a>
                 </li>
                 <li class="nav-item bg-light border">
-                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" >PI MU EPSILON</a>
+                    <a class="nav-link" onclick="loadPiMuEpsilon()" data-toggle="modal" data-target="#exampleModal" >PI MU EPSILON</a>
                 </li>
             </ul>
             
@@ -83,14 +99,17 @@
                 <span aria-hidden="true">&times;</span>
               </button-->        
               <!-- 16:9 aspect ratio -->
-              <img src="./PiMuEpsilon.jpg" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="...">
+              <img id="modalImg" src="" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="...">
         </div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
+
     </div>
+
+    
 </div>
     
 </body>
